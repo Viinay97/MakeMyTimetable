@@ -15,7 +15,7 @@ const ShowTimetable = () => {
     // Create the options for the PDF
     const options = {
       margin: 10, // You can adjust margins if needed
-      filename: 'react_page.pdf',
+      filename: 'my_time_table.pdf',
       image: { type: 'jpeg', quality: 0.98 },
       html2canvas: { scale: 2 },
       jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
@@ -26,7 +26,7 @@ const ShowTimetable = () => {
   return (
     <>
     <div id='pdfContent'>
-      <h2>Timetable</h2>
+      <h2 className='title1'>Time-Table B.Tech 7th Sem</h2>
       <table className="timetable">
         <thead>
           <tr>
@@ -63,6 +63,7 @@ const ShowTimetable = () => {
           ))}
         </tbody>
       </table>
+      <h2 className='title2'>IIIT Allahabad</h2>
     </div>
     <button onClick={downloadPDF}>Download PDF</button>
     </>

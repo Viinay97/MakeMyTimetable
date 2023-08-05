@@ -10,8 +10,7 @@ const App = () => {
     <div>
       {/* Define the routes */}
       <Routes>
-          <Route path="/" element={<Basket />} />
-          <Route path="/timetable" element={<Timetable />} />
+          <Route path="/" element={<Timetable />}/>
           <Route path="/tt" element={<ShowTimetable />} />
           <Route path="/tt/:selectedElectives" element={<ShowTimetable />} />
         </Routes>

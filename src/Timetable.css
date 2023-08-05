@@ -1,0 +1,70 @@
+:root {
+    --colorOne: black;
+}  
+
+.timetable-container {
+    width: 80%;
+    margin: 15vh auto;
+    padding: 20px;
+    color: var(--colorOne);
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .title {
+    margin: 20px auto;
+    background-color: var(--colorOne);
+    font-weight: normal;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 2em;
+    width: 98%;
+    color: white;
+  }
+  
+  .select-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .select {
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: normal;
+  }
+  
+  .submit-button {
+    padding: 8px 15px;
+    background-color: var(--colorOne);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: auto auto;
+    width: 99%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #333;
+    color: #eee; 
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .timetable-container {
+      width: 90%;
+    }
+  
+    .select {
+      width: 100%;
+    }
+  }
+  
