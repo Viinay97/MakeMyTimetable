@@ -1,70 +1,91 @@
-:root {
-    --colorOne: black;
-}  
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
-.timetable-container {
-    width: 80%;
-    margin: 15vh auto;
-    padding: 20px;
-    color: var(--colorOne);
-    text-align: center;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+body,* {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+:root {
+  --colorTwo: #275f9e;
+}
+
+#pdfContent {
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 10px;
+  margin: 5px 10px;
+}
+
+.timetable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.timetable th,
+.timetable td {
+  border: 1px solid rgb(196, 193, 193);
+  padding: 10px;
+}
+
+.timetable th {
+  background-color: var(--colorTwo);
+  color: white;
+  font-size: 1.1em;
+}
+
+/* Add colors to rows */
+.timetable tbody tr:nth-child(odd) {
+  background-color: #ebf1ff; 
+}
+
+.timetable tbody tr:nth-child(even) {
+  background-color: #c8dcf3; 
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 600px) {
+  .timetable th,
+  .timetable td {
+    font-size: 12px;
   }
-  
-  .title {
-    margin: 20px auto;
-    background-color: var(--colorOne);
-    font-weight: normal;
-    border-radius: 10px;
-    padding: 10px 10px;
-    font-size: 2em;
-    width: 98%;
-    color: white;
-  }
-  
-  .select-container {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  
-  .select {
-    outline: none;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
-    border-radius: 4px;
-    font-weight: normal;
-  }
-  
-  .submit-button {
-    padding: 8px 15px;
-    background-color: var(--colorOne);
-    border-radius: 10px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin: auto auto;
-    width: 99%;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submit-button:hover {
-    background-color: #333;
-    color: #eee; 
-  }
-  
-  /* Media Query for smaller screens */
-  @media (max-width: 768px) {
-    .timetable-container {
-      width: 90%;
-    }
-  
-    .select {
-      width: 100%;
-    }
-  }
-  
+}
+
+.title1{
+  background-color: var(--colorTwo);
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 8px 8px;
+  margin-bottom: 3px;
+  font-weight: normal;
+  font-size: x-large;
+}
+
+.title2{
+  background-color: var(--colorTwo);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 3px;
+  font-weight: normal;
+  font-size: large;
+}
+
+/* Button to the right */
+button {
+  padding: 10px 20px;
+  margin: auto 20px;
+  border-radius: 5px;
+  background-color: var(--colorTwo);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+button:hover {
+  background-color: #333;
+  color: #eee; 
+}
