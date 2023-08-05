@@ -6,7 +6,7 @@ body,* {
 }
 
 :root {
-  --colorOne: black;
+  --colorOne: #275f9e;
 }  
 
 .timetable-container {
@@ -17,7 +17,7 @@ body,* {
   text-align: center;
   background-color: #f7f7f7;
   border-radius: 10px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 .title {
@@ -60,8 +60,7 @@ body,* {
 }
 
 .submit-button:hover {
-  background-color: #333;
-  color: #eee; 
+  background-color: #20518a;
 }
 
 /* Media Query for smaller screens */
