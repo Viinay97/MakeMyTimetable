@@ -40,6 +40,10 @@ const Timetable = () => {
     };
 
     const submitElectives = () => {
+        if (!elective.basket1 || !elective.basket2 || !elective.basket3) {
+            alert("Please select all three electives");
+            return;
+        }
         let id1 = elective.basket1.value;
         let id2 = elective.basket2.value;
         let id3 = elective.basket3.value;
@@ -59,6 +63,7 @@ const Timetable = () => {
                     onChange={handleBasket1Change}
                     value={elective.basket1}
                     placeholder="Basket 1 elective"
+                    isSearchable={false}
                 />
                 <Select
                     className="select"
@@ -66,6 +71,7 @@ const Timetable = () => {
                     onChange={handleBasket2Change}
                     value={elective.basket2}
                     placeholder="Basket 2 elective"
+                    isSearchable={false}
                 />
                 <Select
                     className="select"
@@ -73,6 +79,7 @@ const Timetable = () => {
                     onChange={handleBasket3Change}
                     value={elective.basket3}
                     placeholder="Basket 3 elective"
+                    isSearchable={false}
                 />
                 <button className="select submit-button" onClick={submitElectives}>
                     SUBMIT
