@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/timetable-app/static/css/main.f55899ad.css",
+    "main.js": "/timetable-app/static/js/main.ca9b01a9.js",
+    "static/js/703.6e59efc1.chunk.js": "/timetable-app/static/js/703.6e59efc1.chunk.js",
+    "static/js/1.f611774c.chunk.js": "/timetable-app/static/js/1.f611774c.chunk.js",
+    "static/js/787.bdb4181a.chunk.js": "/timetable-app/static/js/787.bdb4181a.chunk.js",
+    "index.html": "/timetable-app/index.html",
+    "main.f55899ad.css.map": "/timetable-app/static/css/main.f55899ad.css.map",
+    "main.ca9b01a9.js.map": "/timetable-app/static/js/main.ca9b01a9.js.map",
+    "703.6e59efc1.chunk.js.map": "/timetable-app/static/js/703.6e59efc1.chunk.js.map",
+    "1.f611774c.chunk.js.map": "/timetable-app/static/js/1.f611774c.chunk.js.map",
+    "787.bdb4181a.chunk.js.map": "/timetable-app/static/js/787.bdb4181a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f55899ad.css",
+    "static/js/main.ca9b01a9.js"
+  ]
+}
