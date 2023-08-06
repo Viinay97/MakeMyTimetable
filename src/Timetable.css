@@ -51,6 +51,16 @@ body,* {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .timetable {
+    width: 100%; 
+  }
+
+  .timetable td {
+    padding: 4px; /* Adjust cell padding */
+  }
+}
+
 .title1{
   background-color: var(--colorTwo);
   color: white;
