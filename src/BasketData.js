@@ -559,7 +559,7 @@ const courses = [
         },
       },
       {
-        id: 18,
+        id: 19,
         basket: 3,
         name: 'Emerging Nano-electronic Devices',
         abbr: 'ENED',
@@ -589,7 +589,7 @@ const courses = [
         },
       },
       {
-        id: 19,
+        id: 20,
         basket: 3,
         name: 'Micro Electromechanical Systems',
         abbr: 'MEMS',

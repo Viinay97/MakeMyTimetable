@@ -1,10 +1,23 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+body,* {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --colorOne: #275f9e;
+}  
+
+.timetable-container {
+  width: 80%;
+  margin: 15vh auto;
+  padding: 20px;
+  color: var(--colorOne);
+  text-align: center;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -64,9 +77,8 @@
   background-color: #f9f9f9;
 }
 
-/* Add colors to rows */
-.timetable tbody tr:nth-child(odd) {
-  background-color: #eaf5ff; /* Light Blue */
+.submit-button:hover {
+  background-color: #20518a;
 }
 
 .timetable tbody tr:nth-child(even) {

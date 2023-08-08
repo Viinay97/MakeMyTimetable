@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Basket from './Basket';
 import Timetable from './Timetable';
 import ShowTimetable from './Showtt';
 

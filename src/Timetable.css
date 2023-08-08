@@ -47,7 +47,19 @@ body,* {
 @media (max-width: 600px) {
   .timetable th,
   .timetable td {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .timetable {
+    width: 100%; 
+  }
+  .timetable th,
+  .timetable td {
     font-size: 12px;
+    padding-left: 2px; 
+    padding-right: 2px; 
   }
 }
 
@@ -86,6 +98,5 @@ button {
 }
 
 button:hover {
-  background-color: #333;
-  color: #eee; 
+  background-color: #20518a;
 }
