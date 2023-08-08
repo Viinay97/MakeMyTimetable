@@ -1,5 +1,4 @@
 import React from 'react';
-import courses from './BasketData';
 import { useParams } from 'react-router-dom';
 import html2pdf from 'html2pdf.js';
 import './Timetable.css';
@@ -16,7 +15,6 @@ const ShowTimetable = () => {
     const options = {
       margin: 10, // You can adjust margins if needed
       filename: 'my_time_table.pdf',
-      filename: 'my_time_table.pdf',
       image: { type: 'jpeg', quality: 0.98 },
       html2canvas: { scale: 2 },
       jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
@@ -27,7 +25,7 @@ const ShowTimetable = () => {
   return (
     <>
     <div id='pdfContent'>
-      <h2 className='title1'>Time-Table B.Tech 7th Sem</h2>
+      <h2 className='title1'>Time-Table</h2>
       <table className="timetable">
         <thead>
           <tr>
@@ -70,7 +68,6 @@ const ShowTimetable = () => {
           ))}
         </tbody>
       </table>
-      <h2 className='title2'>IIIT Allahabad</h2>
       <h2 className='title2'>IIIT Allahabad</h2>
     </div>
     <button onClick={downloadPDF}>Download PDF</button>

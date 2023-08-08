@@ -4,7 +4,7 @@ The Elective Timetable Generator is a web application that allows users to selec
 
 ## Features
 
-- Select three electives from dropdown lists
+- Select three electives from dropdown lists.
 - Validate if all three electives are selected before generating the timetable
-- Generate a personalized timetable based on the selected electives
-- Download the timetable as a PDF for offline use
+- Generate a personalized timetable based on the selected electives.
+- Download your personalized timetable as a PDF for offline use.

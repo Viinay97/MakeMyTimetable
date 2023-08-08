@@ -20,97 +20,56 @@ body,* {
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.title {
+  margin: 20px auto;
+  background-color: var(--colorOne);
+  font-weight: normal;
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-size: 2em;
+  width: 98%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-#pdfContent {
-  text-align: center;
-  margin: 20px auto;
-}
-
-.timetable {
-  border-collapse: collapse;
-  width: 100%;
+.select-container {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
-.timetable th,
-.timetable td {
-  border: 1px solid #ccc;
-  padding: 10px;
+.select {
+  outline: none;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: normal;
 }
 
-.timetable th {
-  background-color: #f2f2f2;
-  font-weight: bold;
-}
-
-/* Alternate row background colors */
-.timetable tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
+.submit-button {
+  padding: 8px 15px;
+  background-color: var(--colorOne);
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: auto auto;
+  width: 99%;
+  transition: background-color 0.3s ease;
 }
 
 .submit-button:hover {
   background-color: #20518a;
 }
 
-.timetable tbody tr:nth-child(even) {
-  background-color: #f0f8ff; /* Lighter Blue */
-}
-
-/* Adjust font size for smaller screens */
-@media (max-width: 600px) {
-  .timetable th,
-  .timetable td {
-    font-size: 12px;
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .timetable-container {
+    width: 90%;
   }
-}
 
-/* Better font */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 1em;
-}
-
-/* Button to the right */
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  float: right;
-  margin: auto;
-}
-
-button:hover {
-  background-color: #0056b3;
+  .select {
+    width: 100%;
+  }
 }

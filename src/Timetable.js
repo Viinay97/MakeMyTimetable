@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Select from "react-select";
 import {
     dropdownOptions1,
@@ -23,12 +23,6 @@ const Timetable = () => {
             basket1: selectedElective,
         }));
     };
-    const handleBasket1Change = (selectedElective) => {
-        setElective((prevElective) => ({
-            ...prevElective,
-            basket1: selectedElective,
-        }));
-    };
 
     const handleBasket2Change = (selectedElective) => {
         setElective((prevElective) => ({
@@ -36,19 +30,7 @@ const Timetable = () => {
             basket2: selectedElective,
         }));
     };
-    const handleBasket2Change = (selectedElective) => {
-        setElective((prevElective) => ({
-            ...prevElective,
-            basket2: selectedElective,
-        }));
-    };
 
-    const handleBasket3Change = (selectedElective) => {
-        setElective((prevElective) => ({
-            ...prevElective,
-            basket3: selectedElective,
-        }));
-    };
     const handleBasket3Change = (selectedElective) => {
         setElective((prevElective) => ({
             ...prevElective,
@@ -66,9 +48,8 @@ const Timetable = () => {
         let id3 = elective.basket3.value;
         const selected = [courses[id1], courses[id2], courses[id3]];
         while (!selected) {}
-      
         navigate("/tt/" + encodeURIComponent(JSON.stringify(selected)));
-      };
+    };
 
     return (
         <div className="timetable-container">
