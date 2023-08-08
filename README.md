@@ -1,3 +1,5 @@
+# Website Link: https://my-electives-timetable.netlify.app/
+# Running the Application
 ### `npm start`
 
 Runs the app in the development mode.\
