@@ -1,4 +1,3 @@
-# Website Link: https://my-electives-timetable.netlify.app/
 # Running the Application
 ### `npm start`
 
